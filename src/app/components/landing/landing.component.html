@@ -1,0 +1,45 @@
+<header>
+    <nav id="desktop">
+        <div id="left">
+            <div>
+                PROJECTS
+            </div>
+            <div id="vertical-rule"></div>
+            <div>
+                <div>
+                    <button mat-button [matMenuTriggerFor]="menu">Go to project</button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item style="height: auto!important;">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Search </mat-label>
+                                <input matInput >
+                            </mat-form-field>
+                        </button>
+                        <button mat-menu-item style="height: auto!important;" *ngFor="let project of projects">
+                            <mat-card class="example-card">
+
+                                <mat-card-title-group>
+                                    <img mat-card-sm-image src="{{project.image.link}}">
+                                    <ul>
+                                        <strong>{{project.name}}</strong>
+
+                                        <li *ngFor="let group of project.groups">{{group.name}}</li>
+                                    </ul>
+
+                                </mat-card-title-group>
+                            </mat-card>
+                        </button>
+                    </mat-menu>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+
+
+        </div>
+    </nav>
+</header>
+
+<div>
+    <h3 id="heading">Project Groups</h3>
+</div>

@@ -1,0 +1,66 @@
+table {
+  width: 100%;
+}
+
+h3 {
+  display: block;
+  border-left: 10px solid #f8b20d;
+  width: 100%;
+  text-indent: 18px;
+  width: 405px;
+  color: #152238;
+  font-size: 24px;
+}
+
+button {
+  background-color: #152238;
+  color: white;
+}
+
+#uploadBtn {
+  background-color: #f8b20d;
+  color: #152238;
+}
+
+#desktop {
+  width: calc(100% - 80px);
+  height: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #f8b20d;
+
+}
+
+#left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#vertical-rule {
+  border-left: 1px solid;
+  height: 40px;
+  margin: 0 20px;
+}
+
+
+
+.expanded-menu {
+  display: block !important;
+}
+.example-card {
+  max-width: 200px;
+  margin-bottom: 8px;
+}
+#menu{
+  width: 500px;
+  height: 500px;
+}
